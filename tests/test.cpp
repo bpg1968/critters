@@ -10,8 +10,8 @@ using std::endl;
 int main()
 {
   cout << COMPILE_DATE << endl;
-  AntTest at;
-  DoodlebugTest dt;
+  AntTest antTest;
+  DoodlebugTest doodlebugTest;
   CritterContainerTest containerTest;
 }
 
