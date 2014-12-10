@@ -4,13 +4,15 @@ using std::endl;
 #include "compile_date.hpp"
 #include "AntTest.hpp"
 #include "DoodlebugTest.hpp"
+#include "CritterContainerTest.hpp"
 #include "test.hpp"
 
 int main()
 {
   cout << COMPILE_DATE << endl;
-  AntTest at;
-  DoodlebugTest dt;
+  AntTest antTest;
+  DoodlebugTest doodlebugTest;
+  CritterContainerTest containerTest;
 }
 
 
