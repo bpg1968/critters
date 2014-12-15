@@ -1,7 +1,11 @@
+#include "Doodlebug.hpp"
 #include "Ant.hpp"
 
 
-Ant::Ant() {}
+Ant::Ant()
+{
+  setType(ANT);
+}
 
 
 // END

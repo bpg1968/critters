@@ -1,7 +1,11 @@
+#include "Critter.hpp"
 #include "Doodlebug.hpp"
 
 
-Doodlebug::Doodlebug() {}
+Doodlebug::Doodlebug()
+{
+  setType(DOODLEBUG);
+}
 
 
 // END

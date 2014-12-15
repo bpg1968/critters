@@ -24,8 +24,12 @@ class Critter
   public:
     Critter();
 
+  protected:
+    void setType(CritterType t);
+
   private:
     CoordinatePair coordinates;
+    CritterType type;
 };
 
 
