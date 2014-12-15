@@ -2,11 +2,21 @@
 #define CRITTER_HPP
 
 
+enum CritterType {ANT, DOODLEBUG};
+
+
 typedef struct
 {
   int x;
   int y;
 } CoordinatePair;
+
+
+typedef struct
+{
+  CritterType type;
+  CoordinatePair coordinates;
+} CritterStatus;
 
 
 class Critter
