@@ -10,4 +10,14 @@ void Critter::setType(CritterType t)
 }
 
 
+CritterStatus Critter::getStatus() const
+{
+  CritterStatus s;
+  s.type = type;
+  s.coordinates = coordinates;
+  return s;
+
+}
+
+
 // END
