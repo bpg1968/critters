@@ -9,6 +9,7 @@ class DoodlebugTest
 
   private:
     void test_constructord();
+    void test_getStatus();
 };
 
 

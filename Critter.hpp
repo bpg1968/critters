@@ -23,6 +23,7 @@ class Critter
 {
   public:
     Critter();
+    CritterStatus getStatus() const;
 
   protected:
     void setType(CritterType t);
