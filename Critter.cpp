@@ -1,7 +1,11 @@
 #include "Critter.hpp"
 
 
-Critter::Critter() {}
+Critter::Critter()
+{
+  CoordinatePair cp = {0, 0};
+  coordinates = cp;
+}
 
 
 Critter::Critter(CoordinatePair cp) : coordinates(cp) {}
