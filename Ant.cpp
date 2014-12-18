@@ -8,4 +8,11 @@ Ant::Ant()
 }
 
 
+Ant::Ant(CoordinatePair cp)
+{
+  setType(ANT);
+  setCoordinates(cp);
+}
+
+
 // END

@@ -23,10 +23,12 @@ class Critter
 {
   public:
     Critter();
+    Critter(CoordinatePair cp);
     CritterStatus getStatus() const;
 
   protected:
     void setType(CritterType t);
+    void setCoordinates(CoordinatePair cp);
 
   private:
     CoordinatePair coordinates;

@@ -9,6 +9,7 @@ class AntTest
 
   private:
     void test_constructord();
+    void test_constructor1();
     void test_getStatus();
 };
 
