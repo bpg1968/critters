@@ -7,6 +7,7 @@ class Ant : public Critter
 {
   public:
     Ant();
+    Ant(CoordinatePair cp);
 
   private:
 };

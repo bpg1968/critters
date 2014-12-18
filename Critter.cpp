@@ -4,9 +4,18 @@
 Critter::Critter() {}
 
 
+Critter::Critter(CoordinatePair cp) : coordinates(cp) {}
+
+
 void Critter::setType(CritterType t)
 {
   type = t;
+}
+
+
+void Critter::setCoordinates(CoordinatePair cp)
+{
+  coordinates = cp;
 }
 
 

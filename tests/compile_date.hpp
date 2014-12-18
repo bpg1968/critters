@@ -1,5 +1,5 @@
 #ifndef COMPILE_DATE
-#define COMPILE_DATE "% Tue Dec 16 19:56:42 EST 2014 <bgiroux> %"
+#define COMPILE_DATE "% Wed Dec 17 21:12:00 EST 2014 <bgiroux> %"
 
 #endif // COMPILE_DATE
 // END

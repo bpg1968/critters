@@ -8,4 +8,11 @@ Doodlebug::Doodlebug()
 }
 
 
+Doodlebug::Doodlebug(CoordinatePair cp)
+{
+  setType(DOODLEBUG);
+  setCoordinates(cp);
+}
+
+
 // END
