@@ -21,6 +21,22 @@ void CritterContainerTest::test_constructor2()
 }
 
 
+void CritterContainerTest::test_spawnAnt()
+{
+  CritterContainer c(20, 15);
+  CoordinatePair cp = {5, 5};
+  c.spawnAnt(cp);
+}
+
+
+void CritterContainerTest::test_spawnDoodlebug()
+{
+  CritterContainer c(20, 15);
+  CoordinatePair cp = {5, 5};
+  c.spawnDoodlebug(cp);
+}
+
+
 void CritterContainerTest::test_getCellStatus()
 {
   CritterContainer c;
