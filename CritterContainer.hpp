@@ -11,9 +11,11 @@ class CritterContainer
   public:
     CritterContainer();
     CritterContainer(int r, int c);
+    void spawnAnt(CoordinatePair cp);
+    void spawnDoodlebug(CoordinatePair cp);
 
   private:
-    vector<Critter> cage;
+    vector<Critter*> cage;
     int rows;
     int columns;
 };
