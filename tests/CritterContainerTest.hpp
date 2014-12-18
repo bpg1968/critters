@@ -9,6 +9,7 @@ class CritterContainerTest
 
   private:
     void test_constructord();
+    void test_constructor2();
     void test_getCellStatus();
 };
 
