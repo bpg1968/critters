@@ -14,6 +14,7 @@ AntTest::AntTest()
 void AntTest::test_constructord()
 {
   Critter* c = new Ant();
+  delete c;
 }
 
 
@@ -25,16 +26,19 @@ void AntTest::test_constructor1()
   assert(status.type == ANT);
   assert(status.coordinates.x == 4);
   assert(status.coordinates.y == 7);
+  delete c;
 }
 
 
 void AntTest::test_getStatus()
 {
-  Critter* c = new Ant();
+  CoordinatePair cp = {0, 0};
+  Critter* c = new Ant(cp);
   CritterStatus status = c->getStatus();
   assert(status.type == ANT);
   assert(status.coordinates.x == 0);
   assert(status.coordinates.y == 0);
+  delete c;
 }
 
 

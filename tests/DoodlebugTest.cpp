@@ -14,6 +14,7 @@ DoodlebugTest::DoodlebugTest()
 void DoodlebugTest::test_constructord()
 {
   Critter* c = new Doodlebug();
+  delete c;
 }
 
 
@@ -25,16 +26,19 @@ void DoodlebugTest::test_constructor1()
   assert(status.type == DOODLEBUG);
   assert(status.coordinates.x == 4);
   assert(status.coordinates.y == 7);
+  delete c;
 }
 
 
 void DoodlebugTest::test_getStatus()
 {
-  Critter* c = new Doodlebug();
+  CoordinatePair cp = {0, 0};
+  Critter* c = new Doodlebug(cp);
   CritterStatus status = c->getStatus();
   assert(status.type == DOODLEBUG);
   assert(status.coordinates.x == 0);
   assert(status.coordinates.y == 0);
+  delete c;
 }
 
 
