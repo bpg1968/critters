@@ -10,9 +10,12 @@ class CritterContainer
 {
   public:
     CritterContainer();
+    CritterContainer(int r, int c);
 
   private:
     vector<Critter> cage;
+    int rows;
+    int columns;
 };
 
 
