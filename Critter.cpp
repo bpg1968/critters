@@ -33,4 +33,10 @@ CritterStatus Critter::getStatus() const
 }
 
 
+bool operator==(CoordinatePair lhs, CoordinatePair rhs)
+{
+  return (lhs.x == rhs.x && lhs.y == rhs.y);
+}
+
+
 // END

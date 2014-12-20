@@ -30,7 +30,7 @@ CellStatus CritterContainer::getCellStatus(CoordinatePair cp)
   for(unsigned int i = 0; i < cage.size(); ++i)
   {
     CritterStatus s = cage[i]->getStatus();
-    if(s.coordinates.x == cp.x && s.coordinates.y == cp.y)
+    if(s.coordinates == cp)
     {
       if(s.type == ANT)
       {
