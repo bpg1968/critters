@@ -44,6 +44,11 @@ void CritterContainerTest::test_getCellStatus()
   const int VERTICAL_SIZE = 15;
   CritterContainer c(HORIZONTAL_SIZE, VERTICAL_SIZE);
 
+  const int EMPTY_COORDINATE_X = 7;
+  const int EMPTY_COORDINATE_Y = 11;
+  const CoordinatePair EMPTY_COORDINATES  = {EMPTY_COORDINATE_X, EMPTY_COORDINATE_Y};
+  assert(c.getCellStatus(EMPTY_COORDINATES) == EMPTY);
+
   const int ANT_COORDINATE_X = 4;
   const int ANT_COORDINATE_Y = 6;
   const CoordinatePair ANT_COORDINATES = {ANT_COORDINATE_X, ANT_COORDINATE_Y};
@@ -113,8 +118,6 @@ void CritterContainerTest::test_getCellStatus()
 
   const CoordinatePair ABOVE_RIGHT_OF_TOP_RIGHT_CORNER = {RIGHT_OUT_OF_BOUNDS, TOP_OUT_OF_BOUNDS};
   assert(c.getCellStatus(ABOVE_RIGHT_OF_TOP_RIGHT_CORNER) == OUT_OF_BOUNDS);
-
-
 
 }
 

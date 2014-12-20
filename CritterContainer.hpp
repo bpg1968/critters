@@ -19,6 +19,7 @@ class CritterContainer
     CellStatus getCellStatus(CoordinatePair cp);
 
   private:
+    bool isOutOfBounds(CoordinatePair cp);
     vector<Critter*> cage;
     int rows;
     int columns;

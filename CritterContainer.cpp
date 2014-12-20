@@ -23,7 +23,7 @@ void CritterContainer::spawnDoodlebug(CoordinatePair cp)
 
 CellStatus CritterContainer::getCellStatus(CoordinatePair cp)
 {
-  if(cp.x < 0 || cp.x >= columns || cp.y < 0 || cp.y >= rows)
+  if(isOutOfBounds(cp))
   {
     return OUT_OF_BOUNDS;
   }
@@ -43,6 +43,12 @@ CellStatus CritterContainer::getCellStatus(CoordinatePair cp)
     }
   }
   return EMPTY;
+}
+
+
+bool CritterContainer::isOutOfBounds(CoordinatePair cp)
+{
+  return (cp.x < 0 || cp.x >= columns || cp.y < 0 || cp.y >= rows);
 }
 
 
