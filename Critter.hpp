@@ -12,6 +12,9 @@ typedef struct
 } CoordinatePair;
 
 
+bool operator==(CoordinatePair lhs, CoordinatePair rhs);
+
+
 typedef struct
 {
   CritterType type;
