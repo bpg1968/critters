@@ -14,6 +14,7 @@ class CritterContainer
   public:
     CritterContainer();
     CritterContainer(int r, int c);
+    ~CritterContainer();
     void spawnAnt(CoordinatePair cp);
     void spawnDoodlebug(CoordinatePair cp);
     CellStatus getCellStatus(CoordinatePair cp);
