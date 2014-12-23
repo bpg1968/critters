@@ -42,5 +42,24 @@ void AntTest::test_getStatus()
 }
 
 
+void AntTest::test_getMove()
+{
+  CoordinatePair cp = {0, 0};
+  Critter* c = new Ant(cp);
+  CoordinatePair moveTo = c->getMove();
+  assert(isValidMove(cp, moveTo));
+}
+
+
+bool AntTest::isValidMove(CoordinatePair from, CoordinatePair to)
+{
+  return (
+    (to.x == from.x && to.y == from.y+1) ||
+    (to.x == from.x && to.y == from.y-1) ||
+    (to.x == from.x+1 && to.y == from.y) ||
+    (to.x == from.x-1 && to.y == from.y)
+  );
+}
+
 
 // END
