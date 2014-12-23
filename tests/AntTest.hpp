@@ -1,6 +1,7 @@
 #ifndef ANTTEST_HPP
 #define ANTTEST_HPP
 
+#include "../Critter.hpp"
 
 class AntTest
 {
@@ -11,6 +12,8 @@ class AntTest
     void test_constructord();
     void test_constructor1();
     void test_getStatus();
+    void test_getMove();
+    bool isValidMove(CoordinatePair from, CoordinatePair to);
 };
 
 

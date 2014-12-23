@@ -28,6 +28,7 @@ class Critter
     Critter();
     Critter(CoordinatePair cp);
     CritterStatus getStatus() const;
+    CoordinatePair getMove();
 
   protected:
     void setType(CritterType t);

@@ -9,6 +9,16 @@ CritterContainer::CritterContainer() {}
 CritterContainer::CritterContainer(int c, int r) : rows(r), columns(c) {}
 
 
+CritterContainer::~CritterContainer()
+{
+  for(int i = 0; i < cage.size(); ++i)
+  {
+    delete cage[i];
+  }
+  cage.clear();
+}
+
+
 void CritterContainer::spawnAnt(CoordinatePair cp)
 {
   cage.push_back(new Ant(cp));
